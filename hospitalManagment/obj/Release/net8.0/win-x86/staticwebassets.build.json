@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "r03+ysYJYKng6BZkrX/WAC50a0SK4UXuIWRspY5SzWs=",
+  "Source": "hospitalManagment",
+  "BasePath": "_content/hospitalManagment",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "hospitalManagment\\wwwroot",
+      "Source": "hospitalManagment",
+      "ContentRoot": "D:\\full stack\\visual studio\\visual-studio-\\hospitalManagment\\hospitalManagment\\wwwroot\\",
+      "BasePath": "_content/hospitalManagment",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

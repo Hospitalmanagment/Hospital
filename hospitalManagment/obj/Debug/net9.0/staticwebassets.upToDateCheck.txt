@@ -1,0 +1,2 @@
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\wwwroot\index.html
+wwwroot\index.html

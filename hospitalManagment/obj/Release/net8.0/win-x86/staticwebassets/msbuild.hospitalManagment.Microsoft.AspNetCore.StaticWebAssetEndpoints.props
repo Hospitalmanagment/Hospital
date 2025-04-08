@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/hospitalManagment/index.4jaqiilcal.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4jaqiilcal"},{"Name":"integrity","Value":"sha256-0OG0zCITxZhCPqUcnW5QjE0VD7g\u002BACpXu9rPqoQW5yo="},{"Name":"label","Value":"_content/hospitalManagment/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1566"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00220OG0zCITxZhCPqUcnW5QjE0VD7g\u002BACpXu9rPqoQW5yo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 16:40:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/hospitalManagment/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0OG0zCITxZhCPqUcnW5QjE0VD7g\u002BACpXu9rPqoQW5yo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1566"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00220OG0zCITxZhCPqUcnW5QjE0VD7g\u002BACpXu9rPqoQW5yo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 16:40:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
