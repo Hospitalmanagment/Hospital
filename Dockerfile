@@ -1,20 +1,22 @@
-# Stage 1: Build
+# Use the official .NET runtime as a base image
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+
+# Use the .NET SDK to build the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy the .csproj and restore
-COPY ["hospitalManagment/hospitalManagment.csproj", "hospitalManagment/"]
-WORKDIR "/src/hospitalManagment"
-RUN dotnet restore "hospitalManagment.csproj"
-
-# Copy everything else and publish
+# Copy project files
 COPY . .
-RUN dotnet publish "hospitalManagment.csproj" -c Release -o /app/publish
 
-# Stage 2: Run
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+# Restore and publish
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app/publish
+
+# Final stage: runtime image
+FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
-EXPOSE 8080
-CMD ["dotnet", "hospitalManagment.dll"]
+# 👇 Change this to your correct DLL
+ENTRYPOINT ["dotnet", "hospitalManagment.dll"]
