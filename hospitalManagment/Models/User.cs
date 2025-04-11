@@ -32,7 +32,7 @@ public class User
     [BsonElement("exitTime")]
     public string? ExitTime { get; set; }
 
-    public Feedback Feedback { get; set; }
+    public Feedback? Feedback { get; set; }
 }
 
 
