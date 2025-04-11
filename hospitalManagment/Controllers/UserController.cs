@@ -142,6 +142,36 @@ public class UserController : ControllerBase
     }
 
 
+    [HttpPost("submit-feedback/{userId}")]
+    public async Task<IActionResult> SubmitFeedback(string userId, [FromBody] Feedback feedback)
+    {
+        if ((feedback.StarRating == null || feedback.StarRating < 1 || feedback.StarRating > 5)
+            && string.IsNullOrWhiteSpace(feedback.Message))
+        {
+            return BadRequest("At least a star rating (1-5) or a message is required.");
+        }
+
+        var filter = Builders<User>.Filter.Eq(u => u.Id, userId);
+        var update = Builders<User>.Update.Set(u => u.Feedback, feedback);
+        var result = await _usersCollection.UpdateOneAsync(filter, update);
+
+        if (result.ModifiedCount == 0)
+            return NotFound("User not found.");
+
+        return Ok("Feedback submitted successfully.");
+    }
+
+    [HttpGet("user-details/{userId}")]
+    public async Task<IActionResult> GetUserDetails(string userId)
+    {
+        var user = await _usersCollection.Find(u => u.Id == userId).FirstOrDefaultAsync();
+        if (user == null)
+            return NotFound("User not found.");
+
+        return Ok(user); // Includes Feedback
+    }
+
+
 
 
 }

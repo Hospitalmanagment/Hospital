@@ -31,6 +31,15 @@ public class User
 
     [BsonElement("exitTime")]
     public string? ExitTime { get; set; }
+
+    public Feedback Feedback { get; set; }
+}
+
+
+public class Feedback
+{
+    public int? StarRating { get; set; } // Nullable, range 1-5
+    public string Message { get; set; }
 }
 
 // ✅ Model for updating exit time
