@@ -172,6 +172,19 @@ public class UserController : ControllerBase
     }
 
 
+    [HttpDelete("delete/{userId}")]
+    public async Task<IActionResult> DeleteUser(string userId)
+    {
+        var filter = Builders<User>.Filter.Eq(u => u.Id, userId);
+        var result = await _usersCollection.DeleteOneAsync(filter);
+
+        if (result.DeletedCount == 0)
+            return NotFound("User not found.");
+
+        return Ok("User deleted successfully.");
+    }
+
+
 
 
 }

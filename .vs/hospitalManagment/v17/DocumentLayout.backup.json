@@ -50,8 +50,7 @@
               "RelativeToolTip": "hospitalManagment\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-09T04:40:12.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T04:40:12.059Z"
             },
             {
               "$type": "Document",
@@ -73,7 +72,7 @@
               "RelativeDocumentMoniker": "hospitalManagment\\Models\\User.cs",
               "ToolTip": "D:\\full stack\\visual studio\\visual-studio-\\hospitalManagment\\hospitalManagment\\Models\\User.cs",
               "RelativeToolTip": "hospitalManagment\\Models\\User.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowCIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T10:24:46.889Z",
               "EditorCaption": ""
@@ -100,8 +99,7 @@
               "RelativeToolTip": "hospitalManagment\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T10:24:52.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T10:24:52.302Z"
             },
             {
               "$type": "Document",

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -55,6 +56,18 @@ public class PatientController : ControllerBase
         var patients = await _mongoDbService.GetSortedPatientsAsync(searchName, room, condition, gender, minAge, maxAge, sortBy, order);
         return Ok(patients);
     }
+
+    [HttpDelete("delete/{id}")]
+    public async Task<IActionResult> DeletePatient(string id)
+    {
+        var result = await _mongoDbService.DeletePatientAsync(id);
+
+        if (!result)
+            return NotFound("Patient not found.");
+
+        return Ok(new { message = "Patient discharged successfully." });
+    }
+
 
 
 }

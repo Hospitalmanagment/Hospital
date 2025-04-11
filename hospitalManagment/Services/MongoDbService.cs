@@ -163,6 +163,12 @@ public class MongoDbService
                                         .ToListAsync();
     }
 
+    public async Task<bool> DeletePatientAsync(string id)
+    {
+        var result = await _patientsCollection.DeleteOneAsync(p => p.Id == id);
+        return result.DeletedCount > 0;
+    }
+
 
 
 
