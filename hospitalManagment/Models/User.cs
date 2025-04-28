@@ -20,6 +20,10 @@ public class User
     [BsonElement("floor")]
     public string? Floor { get; set; }
 
+    [BsonElement("block")]
+    public string? Block { get; set; }
+
+
     [BsonElement("room")]
     public string? Room { get; set; }
 

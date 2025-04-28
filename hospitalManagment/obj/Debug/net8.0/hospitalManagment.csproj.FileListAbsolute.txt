@@ -78,7 +78,6 @@ D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\o
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\hospitalManagment.sourcelink.json
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\scopedcss\bundle\hospitalManagment.styles.css
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.build.json
-D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.development.json
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\hospital.34F00992.Up2Date
@@ -87,3 +86,10 @@ D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\o
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\hospitalManagment.pdb
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\hospitalManagment.genruntimeconfig.cache
 D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\ref\hospitalManagment.dll
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets\msbuild.hospitalManagment.Microsoft.AspNetCore.StaticWebAssets.props
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets\msbuild.hospitalManagment.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets\msbuild.build.hospitalManagment.props
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.hospitalManagment.props
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.hospitalManagment.props
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.pack.json
+D:\full stack\visual studio\visual-studio-\hospitalManagment\hospitalManagment\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

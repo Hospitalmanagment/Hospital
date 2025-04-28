@@ -18,6 +18,8 @@ public class Patient
     [BsonElement("Condition")]
     public string Condition { get; set; }
 
+    public string Floor { get; set; }
+
     [BsonElement("Room")]
     public string Room { get; set; }
 }

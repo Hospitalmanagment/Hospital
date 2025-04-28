@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "PatientController",
+    "Method": "DeletePatient",
+    "RelativePath": "api/patient/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PatientController",
     "Method": "GetPatients",
     "RelativePath": "api/patient/get",
     "HttpMethod": "GET",
@@ -94,6 +110,22 @@
   },
   {
     "ContainingType": "UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/user/delete/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
     "Method": "GetUsers",
     "RelativePath": "api/user/get",
     "HttpMethod": "GET",
@@ -161,6 +193,27 @@
   },
   {
     "ContainingType": "UserController",
+    "Method": "SubmitFeedback",
+    "RelativePath": "api/user/submit-feedback/{userId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "feedback",
+        "Type": "Feedback",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
     "Method": "UpdateExitTime",
     "RelativePath": "api/user/updateExitTime",
     "HttpMethod": "PUT",
@@ -170,6 +223,22 @@
       {
         "Name": "model",
         "Type": "ExitTimeUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserController",
+    "Method": "GetUserDetails",
+    "RelativePath": "api/user/user-details/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
