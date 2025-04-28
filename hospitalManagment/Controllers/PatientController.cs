@@ -46,6 +46,8 @@ public class PatientController : ControllerBase
     public async Task<IActionResult> GetSortedPatients(
     [FromQuery] string? searchName = null,
     [FromQuery] string? room = null,
+    [FromQuery] string? floor = null, 
+    [FromQuery] string? block = null,
     [FromQuery] string? condition = null,
     [FromQuery] string? gender = null,
     [FromQuery] int? minAge = null,

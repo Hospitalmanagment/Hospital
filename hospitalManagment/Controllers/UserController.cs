@@ -97,12 +97,13 @@ public class UserController : ControllerBase
     [FromQuery] string? searchName = null,
     [FromQuery] string? exitTimeStatus = null,
     [FromQuery] string? floor = null,
+    [FromQuery] string? block = null,
     [FromQuery] string? room = null,
     [FromQuery] string? sortBy = "entryTime",
     [FromQuery] string? order = "asc")
     {
 
-        _logger.LogInformation($"Received Params - Search: {searchName}, ExitTimeStatus: {exitTimeStatus}, Floor: {floor}, Room: {room}, SortBy: {sortBy}, Order: {order}");
+        _logger.LogInformation($"Received Params - Search: {searchName}, ExitTimeStatus: {exitTimeStatus}, Floor: {floor}, Block: {block}, Room: {room}, SortBy: {sortBy}, Order: {order}");
 
 
         var filter = Builders<User>.Filter.Empty;
@@ -115,6 +116,11 @@ public class UserController : ControllerBase
         if (!string.IsNullOrEmpty(floor))
         {
             filter &= Builders<User>.Filter.Regex("floor", new BsonRegularExpression(floor, "i"));
+        }
+
+        if (!string.IsNullOrEmpty(block))
+        {
+            filter &= Builders<User>.Filter.Eq("block", block);
         }
 
         if (!string.IsNullOrEmpty(room))
