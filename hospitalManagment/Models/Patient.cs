@@ -31,5 +31,9 @@ public class Patient
     [BsonElement("AdmissionDate")]
     public string AdmissionDate { get; set; }
 
-    
+    [BsonElement("DischargeDate")]
+    public string? DischargeDate { get; set; } 
+
+
+
 }

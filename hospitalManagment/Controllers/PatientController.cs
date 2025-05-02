@@ -55,7 +55,7 @@ public class PatientController : ControllerBase
     [FromQuery] string sortBy = "Name",
     [FromQuery] string order = "asc")
     {
-        var patients = await _mongoDbService.GetSortedPatientsAsync(searchName, room, condition, gender, minAge, maxAge, sortBy, order);
+        var patients = await _mongoDbService.GetSortedPatientsAsync(searchName, room, floor, block, condition, gender, minAge, maxAge, sortBy, order);
         return Ok(patients);
     }
 
@@ -69,6 +69,20 @@ public class PatientController : ControllerBase
 
         return Ok(new { message = "Patient discharged successfully." });
     }
+
+
+    [HttpPut("discharge/{id}")]
+    public async Task<IActionResult> DischargePatient(string id)
+    {
+        var dischargeDate = DateTime.Now.ToString("yyyy-MM-dd");
+        var result = await _mongoDbService.SetDischargeDateAsync(id, dischargeDate);
+
+        if (!result)
+            return NotFound(new { message = "Patient not found." });
+
+        return Ok(new { message = "Patient discharged successfully." });
+    }
+
 
 
 
